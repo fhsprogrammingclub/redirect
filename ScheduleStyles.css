@@ -1,0 +1,68 @@
+table {
+    position: absolute;
+    font-family: arial, sans-serif;
+    width: 100%;
+    top: calc(15%);
+}
+
+th {
+    font-size: 3.5vh;
+}
+
+td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+    font-family: Montserrat;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe1de;
+}
+
+/*#map {*/
+    /*position: absolute;*/
+    /*z-index: 999;*/
+    /*!*top: calc(200% + 320% + 100% + 90% + 60% + 60% + 60% + 60% + 60% + 60% + 10% + 180%);*!*/
+    /*top: calc(1260% + 30%);*/
+    /*left: 0;*/
+    /*height: 58%;  !* The height is 400 pixels *!*/
+    /*width: 100%;*/
+/*}*/
+
+#logistics-title {
+    position: absolute;
+    /*border-style: solid;*/
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-family: Montserrat;
+    font-size: 7vh;
+    letter-spacing: 0.5vw;
+    text-align: center;
+    color: #f0b6b1;
+}
+
+#venue {
+    position: absolute;
+    /*top: calc(200% + 320% + 100% + 90% + 60% + 60% + 60% + 60% + 60% + 60% + 10% + 250%);*/
+    top: calc(1330% + 40%);
+    width: 100%;
+    height: 30%;
+    left: 0;
+    background: #ffe1de;
+
+}
+
+#venue-container {
+    margin-left: 8%;
+}
+
+#venue-container h1, p {
+    font-family: Montserrat;
+}
+
+#venue-container p {
+    text-align: left;
+}

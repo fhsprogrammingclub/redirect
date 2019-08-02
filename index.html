@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<!--<script>-->
+    <!--if (window.innerHeight <= window.innerWidth) {-->
+        <!--location.replace("https://fhsprogrammingclub.github.io/firebirdhacks2/")-->
+    <!--}-->
+<!--</script>-->
+
+<script>
+    function scrollToSponsors() {
+        document.getElementById("sponsors").scrollIntoView({
+            behavior: "smooth",
+        })
+    }
+
+    function scrollToFAQ() {
+        document.getElementById("hackathon").scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: 'center'
+        })
+    }
+
+    function scrollToLogistics() {
+        document.getElementById("logistics").scrollIntoView({
+            behavior: "smooth",
+        })
+    }
+
+    function scrollToAbout() {
+        document.getElementById("about").scrollIntoView({
+            behavior: "smooth",
+        })
+    }
+
+    function scrollToTeam() {
+        document.getElementById("Roshan").scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: 'center'
+        })
+    }
+
+    function openSponsorshipProspectus() {
+        window.open("Sponsorship Prospectus.pdf")
+    }
+</script>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./ScheduleStyles.css">
+    <script src="https://kit.fontawesome.com/61eb020609.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="./Assets/Libraries/jquery-3.3.1.min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <title>Firebird Hacks 2.0</title>
+</head>
+
+<script>
+    $(function () {
+        AOS.init({});
+    });
+    $(window).on('load', function () {
+        AOS.refresh();
+    });
+</script>
+
+<body>
+<header>
+    <nav>
+        <a href="#" id="menu-icon"></a>
+        <ul>
+            <li><a onclick="scrollToFAQ()">FAQ</a></li>
+            <li><a onclick="scrollToAbout()">About</a></li>
+            <li><a onclick="scrollToSponsors()">Sponsors</a></li>
+            <li><a onclick="scrollToTeam()">Team</a></li>
+            <li><a onclick="scrollToLogistics()">Logistics</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="first-section" data-aos="fade-up">
+    <!--<div class="title-holder slideUp">-->
+    <div class="title-holder"></div>
+    <p class="text" id="title">Firebird Hacks 2.0</p>
+</div>
+
+<div class="faqcomponent first-in-first-row" id="hackathon" data-aos="fade-up">
+    <h2 class="text">What is a hackathon?</h2>
+    <p class="text">A hackathon is a coding marathon event where people design and implement solutions to
+        problems, or create new
+        and creative softwares.</p>
+</div>
+
+
+<div class="faqcomponent hideme" id="team" data-aos="fade-up">
+    <h2 class="text">Can I work in a team?</h2>
+    <p class="text">Competitors are allowed to work individually or in teams of up to 4 people.</p>
+</div>
+
+<div class="faqcomponent hideme" id="cost" data-aos="fade-up">
+    <h2 class="text">What do I need to pay for?</h2>
+    <p class="text">FirebirdHacks is completely free of charge! All food, drinks, and swag are included as we
+        want to create
+        the best possible environment for hackers.</p>
+</div>
+
+<div class="faqcomponent last-in-first-row hideme" id="description" data-aos="fade-up">
+    <h2 class="text">What is Firebird Hacks</h2>
+    <p class="text">Firebird Hacks will be a fun way for hackers to get together and design innovative and
+        useful solutions.
+        Firebird Hacks, we will provide a learning environment for people of all experience levels to come and
+        code!</p>
+</div>
+
+<div class="faqcomponent first-in-second-row hideme" id="prerequisites" data-aos="fade-up">
+    <h2 class="text">Are there any required prerequisites?</h2>
+    <p class="text">While at our hackathon, you must adhere to firebird hacks and mlh guidelines. Precoding is
+        forbidden, and is
+        considered cheating. </p>
+</div>
+
+<div class="faqcomponent hideme" id="is-needed" data-aos="fade-up">
+    <h2 class="text">What will I need to bring?</h2>
+    <p class="text">You will need a laptop, a valid student ID (or some sort of student ID), chargers, your
+        phone, a
+        blanket/sleeping bag, toiletries, and any supplies you need for your hack.</p>
+</div>
+
+<div class="faqcomponent last-in-second-row hideme" id="experience" data-aos="fade-up">
+    <h2 class="text">Is experience needed?</h2>
+    <p class="text">Not at all! In fact, Firebird hacks is a great way to begin your programming journey! A
+        basic
+        understanding is recommended, but we will have workshops and mentors to help you make your project idea
+        a reality.</p>
+</div>
+
+<div id="about" data-aos="fade-up">
+    <div id="about-container">
+        <div id="about-title-section">
+            <p class="text fade" id="about-title">About Firebird Hacks 2.0</p>
+        </div>
+        <div id="about-paragraph">
+            <p class="text" id="about-description">
+                Fremont High School's Second Annual Hackathon!
+                <br><br>
+                We bring together hundreds of high school students from across the Bay Area to work together and make
+                their
+                ideas a reality.
+                <br><br>
+                We'll provide the food, refreshments and hacking spaces for you—the hackers—to do your magic. Just bring
+                your ideas and your passion!
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="sponsors" data-aos="fade-up">
+    <p class="text" id="sponsortitle">
+        Our Sponsors
+    </p>
+    <div class="sponsorsnote">
+        <p class="text">
+            We are very thankful to these generous
+            companies for sponsoring this event. If you are interested in
+            sponsoring us, please reach out to us at
+            <a href="mailto:sponsor@firebirdhacks.tech" class="sponsorship-email">sponsor@firebirdhacks.tech</a>
+        </p>
+    </div>
+    <div class="sponsor-logos">
+        <a href="https://18techventures.com"><img class="image" id="techventures" alt="techventures"
+                                                  src="./Assets/Sponsors/techventures.png"></a>
+        <a href="https://hackclub.com/bank/"><img class="image" id="hackclubbank" src="./Assets/Sponsors/hackclub.png"
+                                                  alt="hackclub bank"></a>
+    </div>
+</div>
+
+<div class="card" id="Roshan" data-aos="fade-up">
+    <div class="image-container">
+        <img src="./Assets/hosts/roshan.jpg" class="team-images" alt="roshan">
+    </div>
+    <h1 class="team-text">Roshan Prabhakar</h1>
+    <nav class="profile-menu">
+        <span style="font-size: 3em; color: BLACK;" class="icon-container"><i
+                class="fa fab fa-github fa-xs icon"></i></span>
+        <span style="font-size: 3em; color: BLACK;" class="icon-container"><i class="fa fas fa-envelope fa-xs icon"></i></span>
+        <span style="font-size: 3em; color: BLACK;" class="icon-container"><i class="fa fab fa-linkedin fa-xs icon"></i></span>
+    </nav>
+</div>
+
+<div class="card" id="Neel" data-aos="fade-up">
+    <div class="image-container">
+        <img alt="neel" src="./Assets/hosts/neel.jpg" class="team-images">
+    </div>
+    <h1 class="team-text">Neel Kandlikar</h1>
+    <nav class="profile-menu">
+                <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs icon"></i>
+                        </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs icon"></i>
+                        </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs icon"></i>
+                        </span>
+
+
+        <!--</ul>-->
+        <!--</div>-->
+    </nav>
+</div>
+
+<div class="card" id="David" data-aos="fade-up">
+    <div class="image-container">
+        <img src="./Assets/hosts/david.jpg" class="team-images" alt="david">
+    </div>
+    <h1 class="team-text">David Zhang</h1>
+    <nav class="profile-menu">
+                <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs icon"></i>
+                        </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs icon"></i>
+                        </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs icon"></i>
+                        </span>
+
+
+        <!--</ul>-->
+        <!--</div>-->
+    </nav>
+</div>
+
+<div class="card" id="Kevin" data-aos="fade-up">
+    <div class="image-container">
+        <img src="./Assets/hosts/kevin.jpg" class="team-images" alt="kevin">
+    </div>
+    <h1 class="team-text">Kevin Wang</h1>
+    <nav class="profile-menu">
+                <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs icon"></i>
+                        </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs icon"></i>
+                        </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs icon"></i>
+                        </span>
+
+
+        <!--</ul>-->
+        <!--</div>-->
+    </nav>
+</div>
+
+<div class="card" id="Dwijen" data-aos="fade-up">
+    <div class="image-container">
+        <img src="./Assets/hosts/dwijen.jpg" class="team-images" alt="dwijen">
+    </div>
+    <h1 class="team-text">Dwijen Chawra</h1>
+    <nav class="profile-menu">
+                <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs"></i>
+                        </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs icon"></i>
+                        </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs icon"></i>
+                        </span>
+
+
+        <!--</ul>-->
+        <!--</div>-->
+    </nav>
+</div>
+
+<div class="card" id="Aishik" data-aos="fade-up">
+    <div class="image-container">
+        <img src="./Assets/hosts/aishik.jpg" class="team-images" alt="aishik">
+    </div>
+    <h1 class="team-text">Aishik Bhattacharyya</h1>
+    <nav class="profile-menu">
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs icon"></i>
+                     </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs icon"></i>
+                    </span>
+
+        <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs icon"></i>
+                    </span>
+    </nav>
+</div>
+
+<div id="logistics">
+    <h1 id="logistics-title" data-aos="fade-up">Logistics</h1>
+
+    <table>
+        <tr data-aos="fade-up">
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>Sign In</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>Opening Ceremonies</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>Sponsor Presentations</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>Presentations</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>Judging</td>
+        </tr>
+        <tr data-aos="fade-up">
+            <td>TBD</td>
+            <td>Closing Ceremonies</td>
+        </tr>
+    </table>
+</div>
+
+<!--<div id="map"></div>-->
+
+<div id="venue" data-aos="fade-up">
+    <div id="venue-container">
+        <h1>Venue</h1>
+        <p>TBD</p>
+    </div>
+</div>
+</body>
+
+</html>
